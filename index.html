@@ -7,24 +7,24 @@
   <style>
     /* Reset and basic styles */
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { line-height: 1.6; color: #333; background-color: #f9f9f9; }
+    body { line-height: 1.6; color: #333; background-color: #f9f9f9; scroll-behavior: smooth; }
     a { text-decoration: none; color: #2a5d9f; }
     a:hover { color: #1b3d6c; }
     img { max-width: 100%; }
 
     /* Header / Nav */
-    header { background: #2a5d9f; color: white; padding: 20px 0; }
-    header h1 { text-align: center; margin-bottom: 5px; }
+    header { background: #2a5d9f; color: white; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 999; }
+    header h1 { text-align: center; margin-bottom: 5px; font-size: 1.8rem; }
     nav { text-align: center; margin-top: 10px; }
     nav a { margin: 0 15px; font-weight: bold; color: white; }
     nav a:hover { text-decoration: underline; }
 
     /* Hero Section */
-    .hero { background: url('https://images.unsplash.com/photo-1581091012184-839db9a5df64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHljaG9sb2d5fHx8fHx8MTY5NTI5MTI4Mw&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; }
+    .hero { background: url('https://images.unsplash.com/photo-1581091012184-839db9a5df64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHljaG9sb2d5fHx8fHx8MTY5NTI5MTI4Mw&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover; height: 300px; display: flex; align-items: center; justify-content: center; margin-top: 80px; }
     .hero h2 { color: white; font-size: 2rem; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 5px; text-align: center; }
 
     /* Sections */
-    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; scroll-margin-top: 100px; }
     h2 { color: #2a5d9f; margin-bottom: 20px; text-align: center; }
     p { margin-bottom: 15px; text-align: justify; }
 
@@ -58,10 +58,12 @@
     @media(max-width: 768px){
       .card-container { flex-direction: column; align-items: center; }
       .embed-container { padding-top: 180%; } /* taller for forms on mobile */
+      .hero { height: 250px; }
     }
 
     /* Footer */
     footer { background: #2a5d9f; color: white; padding: 20px; text-align: center; margin-top: 40px; }
+
   </style>
 </head>
 <body>
