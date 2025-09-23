@@ -37,9 +37,22 @@
     .btn { display: inline-block; background: #2a5d9f; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
     .btn:hover { background: #1b3d6c; }
 
-    /* Embeds */
-    .embed-container { position: relative; overflow: hidden; padding-top: 56.25%; margin-bottom: 20px; }
-    .embed-container iframe { position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0; }
+    /* Responsive Embeds */
+    .embed-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 160%; /* Adjust for taller forms */
+      margin-bottom: 20px;
+    }
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
     /* Footer */
     footer { background: #2a5d9f; color: white; padding: 20px; text-align: center; margin-top: 40px; }
@@ -47,6 +60,7 @@
     /* Responsive */
     @media(max-width: 768px){
       .card-container { flex-direction: column; align-items: center; }
+      .embed-container { padding-top: 180%; } /* make form taller for small screens */
     }
   </style>
 </head>
@@ -73,4 +87,51 @@
   <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <p>The Psychology Research & Scholars Club (PRSC) at Rowan College at Burlington County is a student-led organization dedicated to exploring psychology through research, discussions, guest speakers, and hands-on projects. Our mission is to foster curiosity, critical thinking, and academic growth while pr
+    <p>The Psychology Research & Scholars Club (PRSC) at Rowan College at Burlington County is a student-led organization dedicated to exploring psychology through research, discussions, guest speakers, and hands-on projects. Our mission is to foster curiosity, critical thinking, and academic growth while preparing members for transfer to four-year universities.</p>
+    <p>Whether you're a psychology major or simply interested in understanding human behavior, PRSC offers a supportive environment to learn, lead, and grow academically.</p>
+  </section>
+
+  <!-- Events Section with responsive Google Calendar -->
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div class="embed-container">
+      <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_GOOGLE_CALENDAR_ID&ctz=America%2FNew_York" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
+  <!-- Members Section with responsive Google Form -->
+  <section id="members">
+    <h2>Join Our Club</h2>
+    <p>Become a member of PRSC! Fill out the form below to sign up and stay updated on events.</p>
+    <div class="embed-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMmrGcCbZp-a_MoeC50YOC7KtmwtHXhHvSeIlVI-1sPOhESw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="#">APA Style Guide</a></li>
+      <li><a href="#">Psychology Today Articles</a></li>
+      <li><a href="#">RCBC Psychology Department</a></li>
+      <li><a href="#">Rutgers Psychology Department</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:ian_menna@mymail.rcbc.edu">ian_menna@mymail.rcbc.edu</a></p>
+    <p>Faculty Advisor: [Advisor Name] - <a href="mailto:advisor@rcbc.edu">advisor@rcbc.edu</a></p>
+    <p>Follow us on social media: [Instagram / Discord / Facebook]</p>
+    <p style="text-align:center; margin-top:20px;"><a class="btn" href="mailto:ian_menna@mymail.rcbc.edu">Email Us</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Psychology Research & Scholars Club | Rowan College at Burlington County
+  </footer>
+
+</body>
+</html>
