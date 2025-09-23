@@ -42,7 +42,7 @@
       position: relative;
       overflow: hidden;
       width: 100%;
-      padding-top: 160%; /* Adjust for taller forms */
+      padding-top: 56.25%; /* 16:9 for desktop */
       margin-bottom: 20px;
     }
     .embed-container iframe {
@@ -54,14 +54,14 @@
       border: 0;
     }
 
-    /* Footer */
-    footer { background: #2a5d9f; color: white; padding: 20px; text-align: center; margin-top: 40px; }
-
-    /* Responsive */
+    /* Mobile tweaks */
     @media(max-width: 768px){
       .card-container { flex-direction: column; align-items: center; }
-      .embed-container { padding-top: 180%; } /* make form taller for small screens */
+      .embed-container { padding-top: 180%; } /* taller for forms on mobile */
     }
+
+    /* Footer */
+    footer { background: #2a5d9f; color: white; padding: 20px; text-align: center; margin-top: 40px; }
   </style>
 </head>
 <body>
