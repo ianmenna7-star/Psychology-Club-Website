@@ -24,7 +24,7 @@
     .hero h2 { color: white; font-size: 2rem; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 5px; text-align: center; }
 
     /* Sections */
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; scroll-margin-top: 100px; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; scroll-margin-top: 100px; }
     h2 { color: #2a5d9f; margin-bottom: 20px; text-align: center; }
     p { margin-bottom: 15px; text-align: justify; }
 
@@ -42,7 +42,7 @@
       position: relative;
       overflow: hidden;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 for desktop */
+      padding-top: 56.25%; /* default 16:9 */
       margin-bottom: 20px;
     }
     .embed-container iframe {
@@ -54,10 +54,9 @@
       border: 0;
     }
 
-    /* Mobile tweaks */
     @media(max-width: 768px){
       .card-container { flex-direction: column; align-items: center; }
-      .embed-container { padding-top: 180%; } /* taller for forms on mobile */
+      .embed-container { padding-top: 180%; } /* taller for Google Form on mobile */
       .hero { height: 250px; }
     }
 
